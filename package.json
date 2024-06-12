@@ -1,0 +1,77 @@
+{
+  "name": "@backs/utils",
+  "version": "1.0.0",
+  "description": "A set of utils to help you with random tasks",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "publish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backiscute/utils.git"
+  },
+  "keywords": [
+    "pluralize",
+    "bytes",
+    "is-odd",
+    "is-even",
+    "is",
+    "odd",
+    "is",
+    "even",
+    "hash",
+    "encode",
+    "decode",
+    "typescript",
+    "capitalize",
+    "crop",
+    "remove",
+    "escape",
+    "array",
+    "frist",
+    "last",
+    "get",
+    "random",
+    "groupBy",
+    "group",
+    "uuid",
+    "random",
+    "id",
+    "highlight"
+  ],
+  "author": {
+    "name": "Back",
+    "email": "me@back.rs",
+    "url": "https://back.rs"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backiscute/utils/issues"
+  },
+  "homepage": "https://github.com/backiscute/utils#readme",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "is-even": "^1.0.0",
+    "is-number": "^7.0.0",
+    "is-odd": "^3.0.1",
+    "moment": "^2.30.1",
+    "pluralize": "^8.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/bytes": "^3.1.4",
+    "@types/is-even": "^1.0.2",
+    "@types/is-number": "^7.0.5",
+    "@types/is-odd": "^3.0.4",
+    "@types/node": "^20.14.2",
+    "@types/pluralize": "^0.0.33",
+    "@types/progress": "^2.0.7",
+    "@types/uuid": "^9.0.8",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

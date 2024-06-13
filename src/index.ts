@@ -188,7 +188,7 @@ export const randomId = (length: number, mode: "letters" | "lettersLowerCase" | 
 }
 
 export const highlight = (str: string, color: ((text: string | number) => string)) => {
-    for (const match of str.match(/(\[[^[{}\]]*\]|[A-Z\d\s]+:|(?:[a-z-.+]+?:\/\/)(?:[^\/:@?&\\](?::[^\/:@?&\\])?@)?[^\/:@?&\\]+\.[a-z]{2,})/img) ?? [])
+    for (const match of str.match(/(\[[^[{}\]]*\]|\([^()]*\)|^[A-Z\d\s]+:|(?:https?:\/\/)[a-z0-9_\-\.]*[a-z0-9_\-]{1,}\.[a-z]{2,}(?:\?(?:\w+=\w+&?)*)?|(?:[a-z-.+]+?:\/\/)(?:[^/:@?&\\](?::[^\/:@?&\\])?@)?[^/:@?&\\]+\.[a-z]{2,})(?:\?(?:\w+=\w+&?)*)?/img) ?? [])
         str = str.replace(match, color(match));
 
     return str;
@@ -201,3 +201,31 @@ export {
     isOdd,
     isNumber
 };
+
+export default {
+    isTypescript,
+    sha256,
+    md5,
+    hex,
+    base64,
+    binary,
+    ascii,
+    latin1,
+    decode,
+    plural,
+    capitalize,
+    crop,
+    remove,
+    escpae,
+    first,
+    last,
+    random,
+    get,
+    groupBy,
+    group,
+    stringify,
+    colors,
+    uuid,
+    randomId,
+    highlight
+}

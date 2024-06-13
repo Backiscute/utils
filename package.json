@@ -1,8 +1,13 @@
 {
   "name": "@backs/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A set of utils to help you with random tasks",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "prepublish": "npm run build"

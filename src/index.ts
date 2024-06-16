@@ -70,7 +70,7 @@ export const remove = (str: string, ...toRemove: string[])  => {
     return final;
 }
 
-export const escpae = (str: string) => {
+export const escape = (str: string) => {
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 };
 
@@ -216,7 +216,7 @@ export default {
     capitalize,
     crop,
     remove,
-    escpae,
+    escape,
     first,
     last,
     random,

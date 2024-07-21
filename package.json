@@ -57,7 +57,6 @@
   "homepage": "https://github.com/backiscute/utils#readme",
   "dependencies": {
     "bytes": "^3.1.2",
-    "color-convert": "^2.0.1",
     "is-even": "^1.0.0",
     "is-number": "^7.0.0",
     "is-odd": "^3.0.1",
@@ -67,7 +66,6 @@
   },
   "devDependencies": {
     "@types/bytes": "^3.1.4",
-    "@types/color-convert": "^2.0.3",
     "@types/is-even": "^1.0.2",
     "@types/is-number": "^7.0.5",
     "@types/is-odd": "^3.0.4",

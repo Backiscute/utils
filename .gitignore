@@ -8,4 +8,3 @@ temp/
 cache/
 *.db
 Public/
-package-lock.json
